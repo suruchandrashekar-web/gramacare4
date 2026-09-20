@@ -7,7 +7,7 @@ import React, {
 
 import { useNavigate } from "react-router-dom";
 import "./AdminDashboard.css";
-import adminApi from "./adminApi";
+import adminApi from "./AdminApi";
 
 const API_BASE_URL = "http://localhost:8082";
 const ADMIN_EMAIL = "chandrasekarsuru@gmail.com";
