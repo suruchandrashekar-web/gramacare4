@@ -1,0 +1,508 @@
+/* =====================================================
+   NEARBY CONTAINER
+===================================================== */
+
+.nearby-container {
+  width: 100%;
+  margin-top: 28px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.nearby-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 22px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px 18px 0 0;
+}
+
+.nearby-label {
+  margin: 0 0 6px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+
+  color: #4f46e5;
+}
+
+.nearby-header h2 {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 800;
+
+  color: #111827;
+}
+
+.nearby-header p {
+  margin: 6px 0 0;
+
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   LOCATION BUTTON
+===================================================== */
+
+.location-button {
+  width: 100%;
+  min-height: 46px;
+
+  border: 0;
+  border-radius: 12px;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.location-button:hover {
+  background: #4f46e5;
+}
+
+.location-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   LOCATION STATUS
+===================================================== */
+
+.location-status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 18px;
+
+  background: #f5f3ff;
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+}
+
+.location-live-dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #4f46e5;
+
+  box-shadow: 0 0 0 5px #e0e7ff;
+}
+
+.location-status div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.location-status strong {
+  color: #312e81;
+  font-size: 13px;
+}
+
+.location-status small {
+  color: #6b7280;
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.nearby-error {
+  margin: 12px 0;
+  padding: 14px;
+
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+
+  background: #fef2f2;
+  color: #b91c1c;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   GOOGLE MAP
+===================================================== */
+
+.google-map {
+  width: 100%;
+  height: 320px;
+
+  background: #e5e7eb;
+
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+}
+
+
+/* =====================================================
+   RESULTS
+===================================================== */
+
+.nearby-results {
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-top: 0;
+
+  border-radius: 0 0 18px 18px;
+}
+
+.nearby-results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+.nearby-results-header h2 {
+  margin: 0;
+
+  font-size: 20px;
+  color: #111827;
+}
+
+.nearby-results-header > span {
+  padding: 6px 10px;
+
+  background: #eef2ff;
+  color: #4338ca;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.nearby-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  color: #6b7280;
+}
+
+.loading-spinner {
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid #e5e7eb;
+  border-top-color: #4f46e5;
+
+  border-radius: 50%;
+
+  animation: nearbySpin 0.8s linear infinite;
+}
+
+@keyframes nearbySpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.nearby-empty {
+  text-align: center;
+
+  padding: 35px 20px;
+}
+
+.nearby-empty > div {
+  font-size: 34px;
+}
+
+.nearby-empty h3 {
+  margin: 10px 0 6px;
+
+  color: #111827;
+}
+
+.nearby-empty p {
+  margin: 0;
+
+  color: #6b7280;
+}
+
+
+/* =====================================================
+   PLACE LIST
+===================================================== */
+
+.nearby-place-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+/* =====================================================
+   PLACE CARD
+===================================================== */
+
+.nearby-place-card {
+  display: flex;
+  gap: 12px;
+
+  padding: 15px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  transition: 0.2s ease;
+}
+
+.nearby-place-card:hover {
+  border-color: #c7d2fe;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.place-number {
+  flex-shrink: 0;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.place-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.place-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+.place-title-row h3 {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.3;
+
+  color: #111827;
+}
+
+.distance-badge {
+  flex-shrink: 0;
+
+  padding: 5px 8px;
+
+  border-radius: 8px;
+
+  background: #fff7ed;
+  color: #c2410c;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.place-address {
+  margin: 7px 0;
+
+  color: #6b7280;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   BOTTOM
+===================================================== */
+
+.place-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.place-bottom > span {
+  color: #374151;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.place-bottom button {
+  border: 0;
+  background: transparent;
+
+  color: #4f46e5;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.place-bottom button:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (min-width: 650px) {
+
+  .nearby-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .location-button {
+    width: auto;
+    min-width: 160px;
+    padding: 0 18px;
+  }
+
+  .google-map {
+    height: 400px;
+  }
+
+  .nearby-results {
+    padding: 26px;
+  }
+}
+
+
+/* =====================================================
+   DESKTOP
+===================================================== */
+
+@media (min-width: 900px) {
+
+  .nearby-container {
+    margin-top: 35px;
+  }
+
+  .nearby-header {
+    padding: 26px 30px;
+  }
+
+  .nearby-header h2 {
+    font-size: 27px;
+  }
+
+  .google-map {
+    height: 460px;
+  }
+
+  .nearby-results {
+    padding: 30px;
+  }
+
+  .nearby-place-card {
+    padding: 18px;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+
+  .nearby-header {
+    padding: 18px;
+  }
+
+  .nearby-header h2 {
+    font-size: 21px;
+  }
+
+  .google-map {
+    height: 280px;
+  }
+
+  .nearby-results {
+    padding: 16px;
+  }
+
+  .place-title-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .distance-badge {
+    align-self: flex-start;
+  }
+
+}

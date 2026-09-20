@@ -1,0 +1,1014 @@
+
+/* =========================================================
+   GRAMACARE - USER DASHBOARD
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.user-dashboard-page {
+  min-height: 100vh;
+  background: #f5f7f5;
+  color: #172117;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.user-navbar {
+  width: 100%;
+  min-height: 76px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e9e5;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6%;
+  gap: 30px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LOGO */
+
+.user-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-decoration: none;
+  color: #172117;
+
+  min-width: 190px;
+}
+
+.user-logo-symbol {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 12px;
+
+  background: #e8f6e9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+}
+
+.user-logo h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.user-logo span {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 11px;
+  color: #6f796f;
+  letter-spacing: 0.5px;
+}
+
+/* NAV LINKS */
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+  flex: 1;
+}
+
+.user-nav-item {
+  padding: 11px 16px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  color: #626b62;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+}
+
+.user-nav-item:hover {
+  background: #f0f7f0;
+  color: #247b35;
+}
+
+.user-nav-item.active {
+  background: #e8f6e9;
+  color: #247b35;
+}
+
+/* LOGOUT */
+
+.user-logout {
+  border: 1px solid #e0e5e0;
+
+  background: #ffffff;
+
+  color: #555d55;
+
+  padding: 10px 17px;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.user-logout:hover {
+  background: #fff2f2;
+  border-color: #f0caca;
+  color: #c0392b;
+}
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.user-hero {
+  width: 100%;
+
+  min-height: 390px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eaf8ec 0%,
+      #f5fbf5 55%,
+      #e6f5e9 100%
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid #e0ebe1;
+
+  padding: 65px 20px;
+}
+
+.user-hero-content {
+  width: 100%;
+  max-width: 1050px;
+
+  text-align: center;
+}
+
+.user-hero-content > p {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  background: #dff1e1;
+
+  color: #28773a;
+
+  border-radius: 30px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+
+  margin-bottom: 18px;
+}
+
+.user-hero-content h1 {
+  font-size: 43px;
+
+  line-height: 1.2;
+
+  color: #182719;
+
+  font-weight: 750;
+
+  margin-bottom: 10px;
+}
+
+.user-hero-content h2 {
+  font-size: 25px;
+
+  font-weight: 600;
+
+  color: #315535;
+
+  margin-bottom: 12px;
+}
+
+.user-hero-content > span {
+  display: block;
+
+  max-width: 650px;
+
+  margin: 0 auto 30px;
+
+  color: #667066;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   SEARCH BOX
+   ========================================================= */
+
+.user-search-box {
+  width: 100%;
+  max-width: 800px;
+
+  min-height: 62px;
+
+  margin: 0 auto;
+
+  padding: 7px 8px 7px 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5dc;
+
+  border-radius: 13px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  box-shadow:
+    0 8px 25px rgba(30, 80, 35, 0.08);
+}
+
+.user-search-box > span {
+  font-size: 19px;
+
+  flex-shrink: 0;
+}
+
+.user-search-box input {
+  flex: 1;
+
+  min-width: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #202820;
+
+  font-size: 14px;
+}
+
+.user-search-box input::placeholder {
+  color: #9aa19a;
+}
+
+.user-search-box button {
+  border: none;
+
+  background: #27853b;
+
+  color: #ffffff;
+
+  padding: 13px 25px;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.user-search-box button:hover {
+  background: #1e6d2f;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.user-main {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 55px 25px 80px;
+}
+
+/* SECTION HEADER */
+
+.user-section-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 28px;
+}
+
+.user-section-header p {
+  color: #3b8547;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  margin-bottom: 7px;
+}
+
+.user-section-header h2 {
+  font-size: 27px;
+
+  color: #1c271d;
+
+  margin-bottom: 7px;
+}
+
+.user-section-header span {
+  color: #788178;
+
+  font-size: 13px;
+}
+
+/* =========================================================
+   PROVIDER GRID
+   ========================================================= */
+
+.user-provider-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+/* =========================================================
+   PROVIDER CARD
+   ========================================================= */
+
+.user-provider-card {
+  background: #ffffff;
+
+  border: 1px solid #e4e9e4;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 4px 15px rgba(30, 45, 30, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.user-provider-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #cde1cf;
+
+  box-shadow:
+    0 14px 30px rgba(30, 70, 35, 0.10);
+}
+
+/* =========================================================
+   PROVIDER IMAGE
+   ========================================================= */
+
+.user-provider-image {
+  height: 190px;
+
+  width: 100%;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #edf3ed;
+}
+
+.user-provider-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.user-provider-card:hover
+.user-provider-image img {
+  transform: scale(1.04);
+}
+
+.user-provider-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 55px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eaf4eb,
+      #dcecdf
+    );
+}
+
+/* AVAILABLE BADGE */
+
+.user-available-badge {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  background: #ffffff;
+
+  color: #27803a;
+
+  padding: 7px 10px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================================
+   PROVIDER CONTENT
+   ========================================================= */
+
+.user-provider-content {
+  padding: 20px;
+}
+
+.user-provider-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-bottom: 14px;
+}
+
+.user-provider-top h3 {
+  color: #1b251c;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  margin-bottom: 7px;
+}
+
+.user-provider-top p {
+  color: #5d695e;
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+/* RATING */
+
+.user-rating {
+  flex-shrink: 0;
+
+  background: #fff9df;
+
+  color: #936f00;
+
+  padding: 6px 9px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+/* LOCATION */
+
+.user-provider-location {
+  color: #697269;
+
+  font-size: 13px;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #edf0ed;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   PROVIDER INFO
+   ========================================================= */
+
+.user-provider-info {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  padding: 15px 0;
+}
+
+.user-provider-info > div {
+  background: #f7f9f7;
+
+  padding: 11px;
+
+  border-radius: 8px;
+}
+
+.user-provider-info span {
+  display: block;
+
+  color: #899189;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.6px;
+
+  margin-bottom: 5px;
+}
+
+.user-provider-info strong {
+  display: block;
+
+  color: #263327;
+
+  font-size: 13px;
+}
+
+/* =========================================================
+   DISTANCE
+   ========================================================= */
+
+.user-distance {
+  background: #f0f8f1;
+
+  color: #32703c;
+
+  border-radius: 8px;
+
+  padding: 9px 11px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  margin-bottom: 16px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.user-provider-buttons {
+  display: grid;
+
+  grid-template-columns: 95px 1fr;
+
+  gap: 9px;
+}
+
+.user-call-button,
+.user-view-button {
+  min-height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+/* CALL */
+
+.user-call-button {
+  background: #eaf6ec;
+
+  color: #247537;
+
+  border: 1px solid #d6ead8;
+}
+
+.user-call-button:hover {
+  background: #dcefe0;
+
+  border-color: #c4dfc8;
+}
+
+/* VIEW DETAILS */
+
+.user-view-button {
+  background: #27843b;
+
+  color: #ffffff;
+}
+
+.user-view-button:hover {
+  background: #1f6d30;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.user-empty-state {
+  width: 100%;
+
+  min-height: 300px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5eae5;
+
+  border-radius: 15px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  text-align: center;
+
+  padding: 40px 20px;
+}
+
+.user-empty-state > div {
+  width: 65px;
+  height: 65px;
+
+  background: #f0f5f0;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+
+  margin-bottom: 15px;
+}
+
+.user-empty-state h2 {
+  color: #263126;
+
+  font-size: 21px;
+
+  margin-bottom: 9px;
+}
+
+.user-empty-state p {
+  color: #727a72;
+
+  font-size: 14px;
+
+  margin-bottom: 7px;
+
+  max-width: 500px;
+}
+
+.user-empty-state span {
+  color: #9aa19a;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .user-navbar {
+    padding: 0 3%;
+  }
+
+  .user-nav-item {
+    padding: 10px 10px;
+
+    font-size: 13px;
+  }
+
+  .user-provider-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .user-hero-content h1 {
+    font-size: 37px;
+  }
+
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  /* NAVBAR */
+
+  .user-navbar {
+    min-height: auto;
+
+    padding: 13px 18px;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+  }
+
+  .user-logo {
+    min-width: auto;
+  }
+
+  .user-logo-symbol {
+    width: 39px;
+    height: 39px;
+
+    font-size: 20px;
+  }
+
+  .user-logo h2 {
+    font-size: 17px;
+  }
+
+  .user-logo span {
+    font-size: 9px;
+  }
+
+  .user-logout {
+    padding: 8px 12px;
+
+    font-size: 12px;
+  }
+
+  .user-nav {
+    width: 100%;
+
+    order: 3;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    padding-bottom: 2px;
+  }
+
+  .user-nav-item {
+    white-space: nowrap;
+
+    font-size: 12px;
+
+    padding: 9px 11px;
+  }
+
+  /* HERO */
+
+  .user-hero {
+    min-height: auto;
+
+    padding: 45px 18px;
+  }
+
+  .user-hero-content > p {
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 14px;
+  }
+
+  .user-hero-content h1 {
+    font-size: 30px;
+  }
+
+  .user-hero-content h2 {
+    font-size: 19px;
+  }
+
+  .user-hero-content > span {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 24px;
+  }
+
+  /* SEARCH */
+
+  .user-search-box {
+    min-height: auto;
+
+    padding: 7px;
+
+    gap: 7px;
+  }
+
+  .user-search-box > span {
+    padding-left: 8px;
+  }
+
+  .user-search-box input {
+    font-size: 12px;
+  }
+
+  .user-search-box button {
+    padding: 11px 14px;
+
+    font-size: 12px;
+  }
+
+  /* MAIN */
+
+  .user-main {
+    padding: 38px 16px 60px;
+  }
+
+  .user-section-header {
+    margin-bottom: 22px;
+  }
+
+  .user-section-header h2 {
+    font-size: 22px;
+  }
+
+  .user-section-header p {
+    font-size: 9px;
+  }
+
+  /* GRID */
+
+  .user-provider-grid {
+    grid-template-columns: 1fr;
+
+    gap: 17px;
+  }
+
+  /* CARD */
+
+  .user-provider-image {
+    height: 210px;
+  }
+
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .user-navbar {
+    padding: 12px;
+  }
+
+  .user-logo-symbol {
+    width: 36px;
+    height: 36px;
+  }
+
+  .user-logo h2 {
+    font-size: 16px;
+  }
+
+  .user-logout {
+    font-size: 11px;
+
+    padding: 8px 10px;
+  }
+
+  .user-hero {
+    padding: 38px 14px;
+  }
+
+  .user-hero-content h1 {
+    font-size: 26px;
+  }
+
+  .user-hero-content h2 {
+    font-size: 17px;
+  }
+
+  .user-search-box {
+    flex-wrap: wrap;
+
+    padding: 8px;
+  }
+
+  .user-search-box > span {
+    display: none;
+  }
+
+  .user-search-box input {
+    width: 100%;
+
+    flex-basis: 100%;
+
+    min-height: 38px;
+
+    padding: 0 8px;
+  }
+
+  .user-search-box button {
+    width: 100%;
+  }
+
+  .user-main {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .user-provider-content {
+    padding: 16px;
+  }
+
+  .user-provider-top h3 {
+    font-size: 16px;
+  }
+
+  .user-provider-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .user-call-button,
+  .user-view-button {
+    min-height: 40px;
+  }
+
+}
+
