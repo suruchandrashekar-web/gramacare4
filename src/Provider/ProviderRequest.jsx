@@ -2392,11 +2392,11 @@ function ProviderRequest() {
           <div className="details-panel-header">
             <div>
               <span>
-                📋 Request Information
+         
               </span>
 
               <h2>
-                Request Details
+            
               </h2>
             </div>
 

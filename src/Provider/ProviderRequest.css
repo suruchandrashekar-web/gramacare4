@@ -7906,3 +7906,1041 @@ textarea:disabled {
   }
 
 }
+
+
+
+/* =========================================================
+   PROVIDER REQUESTS - MOBILE VIEW DETAILS FIX
+   DO NOT CHANGE JSX
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   MAIN REQUEST PAGE
+========================================================= */
+
+.provider-request-page {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+.provider-request-main {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   REQUEST CARD
+========================================================= */
+
+.request-card {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.request-card.selected {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.request-card-type,
+.customer-request-message,
+.request-customer,
+.request-service,
+.request-status-column,
+.request-actions,
+.request-card-message {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CUSTOMER
+========================================================= */
+
+.request-customer {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  min-width: 0;
+}
+
+.customer-avatar {
+  flex: 0 0 64px;
+
+  width: 64px;
+  height: 64px;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+}
+
+.customer-avatar img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.customer-info {
+  flex: 1 1 auto;
+
+  min-width: 0;
+
+  width: auto;
+}
+
+.customer-info h3,
+.customer-info p {
+  max-width: 100%;
+
+  white-space: normal;
+
+  word-break: normal;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   SERVICE
+========================================================= */
+
+.request-service {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  min-width: 0;
+}
+
+.request-service > img {
+  flex: 0 0 70px;
+
+  width: 70px;
+  height: 70px;
+
+  object-fit: cover;
+
+  border-radius: 14px;
+}
+
+.request-service-info {
+  flex: 1 1 auto;
+
+  min-width: 0;
+
+  width: auto;
+}
+
+.request-service-info h3,
+.request-service-info p,
+.request-service-info strong,
+.request-service-info span {
+  max-width: 100%;
+
+  white-space: normal;
+
+  word-break: normal;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.request-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  min-width: 0;
+}
+
+.request-actions button {
+  min-width: 0;
+
+  max-width: 100%;
+
+  white-space: normal;
+
+  overflow-wrap: anywhere;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ⭐ VIEW DETAILS PANEL
+========================================================= */
+
+.request-details-panel {
+  width: 100% !important;
+
+  max-width: 100% !important;
+
+  min-width: 0 !important;
+
+  margin: 16px 0 0 0;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+
+  overflow-y: visible;
+
+  border-radius: 20px;
+}
+
+
+/* =========================================================
+   DETAILS HEADER
+========================================================= */
+
+.request-details-panel h2,
+.request-details-panel h3,
+.request-details-panel h4,
+.request-details-panel p,
+.request-details-panel span,
+.request-details-panel strong,
+.request-details-panel small {
+  max-width: 100%;
+
+  white-space: normal;
+
+  word-break: normal;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   DETAILS CUSTOMER
+========================================================= */
+
+.details-customer-card {
+  width: 100%;
+
+  max-width: 100%;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.details-customer-card > div {
+  min-width: 0;
+}
+
+.details-customer-card img {
+  flex: 0 0 72px;
+
+  width: 72px;
+  height: 72px;
+
+  object-fit: cover;
+
+  border-radius: 16px;
+}
+
+
+/* =========================================================
+   DETAILS CONTACT
+========================================================= */
+
+.details-contact-card {
+  width: 100%;
+
+  max-width: 100%;
+
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.details-contact-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+
+  box-sizing: border-box;
+}
+
+.details-contact-button,
+.details-call-button,
+.details-message-button {
+  width: 100%;
+
+  min-width: 0;
+
+  max-width: 100%;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  overflow: hidden;
+}
+
+.details-contact-content {
+  flex: 1 1 auto;
+
+  min-width: 0;
+
+  width: auto;
+}
+
+.details-contact-content strong,
+.details-contact-content small {
+  display: block;
+
+  max-width: 100%;
+
+  white-space: normal;
+
+  word-break: normal;
+
+  overflow-wrap: anywhere;
+}
+
+.contact-arrow {
+  flex: 0 0 auto;
+}
+
+
+/* =========================================================
+   DETAILS SERVICE CARD
+========================================================= */
+
+.details-service-card {
+  width: 100%;
+
+  max-width: 100%;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.details-service-card img {
+  flex: 0 0 80px;
+
+  width: 80px;
+  height: 80px;
+
+  object-fit: cover;
+
+  border-radius: 16px;
+}
+
+.details-service-card > div {
+  flex: 1 1 auto;
+
+  min-width: 0;
+
+  width: auto;
+}
+
+.details-service-card h3,
+.details-service-card p,
+.details-service-card strong,
+.details-service-card span {
+  max-width: 100%;
+
+  white-space: normal;
+
+  word-break: normal;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   DETAILS GRID
+========================================================= */
+
+.details-grid {
+  width: 100%;
+
+  max-width: 100%;
+
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+
+  box-sizing: border-box;
+}
+
+.details-grid > div {
+  min-width: 0;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.details-grid span,
+.details-grid strong {
+  display: block;
+
+  max-width: 100%;
+
+  white-space: normal;
+
+  word-break: normal;
+
+  overflow-wrap: anywhere;
+}
+
+.details-full {
+  grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   CUSTOMER MESSAGE
+========================================================= */
+
+.details-problem {
+  width: 100%;
+
+  max-width: 100%;
+
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.details-problem p {
+  width: 100%;
+
+  max-width: 100%;
+
+  white-space: normal;
+
+  word-break: normal;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   CURRENT STATUS
+========================================================= */
+
+.details-current-status {
+  width: 100%;
+
+  max-width: 100%;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  box-sizing: border-box;
+}
+
+.details-current-status span,
+.details-current-status strong {
+  min-width: 0;
+
+  max-width: 100%;
+
+  white-space: normal;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   DETAILS ACTIONS
+========================================================= */
+
+.details-actions {
+  width: 100%;
+
+  max-width: 100%;
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  box-sizing: border-box;
+}
+
+.details-actions button {
+  min-width: 0;
+
+  max-width: 100%;
+
+  white-space: normal;
+
+  overflow-wrap: anywhere;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .provider-request-page,
+  .provider-request-main {
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    min-width: 0 !important;
+
+    overflow-x: hidden !important;
+  }
+
+
+  /* MAIN CONTENT */
+
+  .provider-request-main {
+    padding-left: 12px !important;
+
+    padding-right: 12px !important;
+  }
+
+
+  /* REQUEST CARD */
+
+  .request-card {
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    min-width: 0 !important;
+
+    padding: 14px !important;
+
+    border-radius: 18px;
+  }
+
+
+  /* CUSTOMER */
+
+  .request-customer {
+    gap: 12px;
+
+    align-items: center;
+  }
+
+  .customer-avatar {
+    flex: 0 0 58px;
+
+    width: 58px;
+    height: 58px;
+  }
+
+  .customer-info {
+    min-width: 0;
+  }
+
+  .customer-info h3 {
+    font-size: 17px;
+
+    line-height: 1.3;
+  }
+
+  .customer-info p {
+    font-size: 12px;
+
+    line-height: 1.45;
+  }
+
+
+  /* SERVICE */
+
+  .request-service {
+    gap: 12px;
+
+    align-items: center;
+  }
+
+  .request-service > img {
+    flex: 0 0 58px;
+
+    width: 58px;
+    height: 58px;
+  }
+
+  .request-service-info h3 {
+    font-size: 16px;
+
+    line-height: 1.3;
+  }
+
+  .request-service-info p,
+  .request-service-info strong,
+  .request-service-info span {
+    font-size: 12px;
+
+    line-height: 1.45;
+  }
+
+
+  /* STATUS */
+
+  .request-status-column {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+
+  /* ACTIONS */
+
+  .request-actions {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 8px;
+
+    width: 100%;
+  }
+
+  .request-actions button {
+    width: 100%;
+
+    min-height: 42px;
+
+    padding: 9px 8px;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+  }
+
+
+  /* =====================================================
+     ⭐ VIEW DETAILS — MAIN FIX
+  ===================================================== */
+
+  .request-details-panel {
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    min-width: 0 !important;
+
+    margin: 12px 0 0 0 !important;
+
+    padding: 16px !important;
+
+    border-radius: 18px !important;
+
+    box-sizing: border-box !important;
+
+    overflow-x: hidden !important;
+  }
+
+
+  /* DETAILS TITLE */
+
+  .request-details-panel h2 {
+    width: 100%;
+
+    font-size: 24px !important;
+
+    line-height: 1.25 !important;
+
+    white-space: normal !important;
+
+    word-break: normal !important;
+
+    overflow-wrap: anywhere !important;
+
+    margin: 0 0 14px 0;
+  }
+
+  .request-details-panel h3 {
+    font-size: 18px;
+
+    line-height: 1.3;
+
+    white-space: normal;
+
+    word-break: normal;
+
+    overflow-wrap: anywhere;
+  }
+
+
+  /* DETAILS CUSTOMER */
+
+  .details-customer-card {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    gap: 12px;
+
+    padding: 12px !important;
+  }
+
+  .details-customer-card img {
+    flex: 0 0 58px;
+
+    width: 58px;
+
+    height: 58px;
+  }
+
+
+  /* DETAILS CONTACT */
+
+  .details-contact-grid {
+    grid-template-columns: 1fr !important;
+
+    width: 100% !important;
+
+    gap: 10px;
+  }
+
+  .details-contact-button,
+  .details-call-button,
+  .details-message-button {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    padding: 12px !important;
+  }
+
+
+  /* DETAILS SERVICE */
+
+  .details-service-card {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    gap: 12px;
+
+    padding: 12px !important;
+  }
+
+  .details-service-card img {
+    flex: 0 0 62px;
+
+    width: 62px;
+
+    height: 62px;
+  }
+
+  .details-service-card > div {
+    min-width: 0 !important;
+  }
+
+
+  /* DETAILS GRID */
+
+  .details-grid {
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    min-width: 0 !important;
+
+    grid-template-columns: repeat(
+      2,
+      minmax(0, 1fr)
+    ) !important;
+
+    gap: 8px !important;
+  }
+
+  .details-grid > div {
+    min-width: 0 !important;
+
+    width: 100% !important;
+
+    padding: 10px !important;
+  }
+
+  .details-grid span {
+    font-size: 10px;
+
+    line-height: 1.3;
+  }
+
+  .details-grid strong {
+    font-size: 13px;
+
+    line-height: 1.35;
+
+    white-space: normal;
+
+    overflow-wrap: anywhere;
+  }
+
+
+  /* MESSAGE */
+
+  .details-problem {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    padding: 12px !important;
+  }
+
+  .details-problem p {
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    white-space: normal;
+
+    word-break: normal;
+
+    overflow-wrap: anywhere;
+  }
+
+
+  /* CURRENT STATUS */
+
+  .details-current-status {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    padding: 12px !important;
+  }
+
+
+  /* DETAILS ACTIONS */
+
+  .details-actions {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 9px !important;
+  }
+
+  .details-actions button {
+    width: 100% !important;
+
+    min-height: 45px;
+
+    padding: 10px 12px;
+
+    font-size: 13px;
+
+    line-height: 1.3;
+  }
+
+
+  /* SUCCESS / ERROR BOXES */
+
+  .details-success-box,
+  .details-rejected-box {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 12px !important;
+
+    overflow: hidden;
+  }
+
+  .details-success-box > div,
+  .details-rejected-box > div {
+    min-width: 0;
+  }
+
+  .details-success-box p,
+  .details-rejected-box p {
+    white-space: normal;
+
+    word-break: normal;
+
+    overflow-wrap: anywhere;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .provider-request-main {
+    padding-left: 8px !important;
+
+    padding-right: 8px !important;
+  }
+
+  .request-card {
+    padding: 12px !important;
+  }
+
+  .request-details-panel {
+    padding: 13px !important;
+
+    border-radius: 16px !important;
+  }
+
+  .request-details-panel h2 {
+    font-size: 22px !important;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .details-full {
+    grid-column: auto !important;
+  }
+
+  .request-actions {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* =========================================================
+   EXTRA SAFETY AGAINST VERTICAL LETTER BREAKING
+========================================================= */
+
+.request-details-panel *,
+.request-card * {
+  max-width: 100%;
+
+  box-sizing: border-box;
+}
+
+.request-details-panel h1,
+.request-details-panel h2,
+.request-details-panel h3,
+.request-details-panel h4,
+.request-details-panel p,
+.request-details-panel span,
+.request-details-panel strong,
+.request-details-panel small,
+.request-card h1,
+.request-card h2,
+.request-card h3,
+.request-card h4,
+.request-card p,
+.request-card span,
+.request-card strong,
+.request-card small {
+  word-break: normal !important;
+
+  overflow-wrap: anywhere;
+
+  white-space: normal;
+}
