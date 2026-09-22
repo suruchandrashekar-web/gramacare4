@@ -6,7 +6,7 @@ import React, {
 } from "react";
 
 import { useNavigate } from "react-router-dom";
-import "./AdminDashboard.css";
+import "./AdminDashBoard.css";
 import adminApi from "./AdminApi.js";
 
 const API_BASE_URL = "http://localhost:8082";
