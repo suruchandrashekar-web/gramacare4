@@ -18,7 +18,7 @@ import "./ProviderRequest.css";
 // API
 // =====================================================
 
-const API_BASE_URL = "http://localhost:8082";
+const API_BASE_URL = "https://gramacare4.onrender.com";
 
 const DEFAULT_SERVICE_IMAGE =
   "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=700&q=80";
