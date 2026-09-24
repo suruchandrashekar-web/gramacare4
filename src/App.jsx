@@ -6,6 +6,12 @@ import {
 } from "react-router-dom";
 
 // =====================================================
+// LOCATION
+// =====================================================
+
+import Location from "./Location.jsx";
+
+// =====================================================
 // PROVIDER PAGES
 // =====================================================
 
@@ -28,6 +34,7 @@ import Restetpassword from "./Restetpassword/Restetpassword.jsx";
 // =====================================================
 // ADMIN PAGE
 // =====================================================
+
 import AdminDashboard from "./Adimin/AdminDashboard.jsx";
 
 // =====================================================
@@ -55,157 +62,165 @@ function PageWithFooter({ children }) {
 
 function App() {
   return (
-    <Routes>
-
+    <>
       {/* =================================================
-          LOGIN
+          LOCATION PERMISSION
       ================================================= */}
 
-      <Route
-        path="/login"
-        element={<Login />}
-      />
+      <Location />
 
-      {/* =================================================
-          REGISTER
-      ================================================= */}
+      <Routes>
 
-      <Route
-        path="/register"
-        element={<Register />}
-      />
+        {/* =================================================
+            LOGIN
+        ================================================= */}
 
-      {/* =================================================
-          FORGOT PASSWORD
-      ================================================= */}
+        <Route
+          path="/login"
+          element={<Login />}
+        />
 
-      <Route
-        path="/forgot-password"
-        element={<ForgotPassword />}
-      />
+        {/* =================================================
+            REGISTER
+        ================================================= */}
 
-      {/* =================================================
-          OTP VERIFICATION
-      ================================================= */}
+        <Route
+          path="/register"
+          element={<Register />}
+        />
 
-      <Route
-        path="/otp"
-        element={<OtpPassword />}
-      />
+        {/* =================================================
+            FORGOT PASSWORD
+        ================================================= */}
 
-      {/* =================================================
-          RESET PASSWORD
-      ================================================= */}
+        <Route
+          path="/forgot-password"
+          element={<ForgotPassword />}
+        />
 
-      <Route
-        path="/reset-password"
-        element={<Restetpassword />}
-      />
+        {/* =================================================
+            OTP VERIFICATION
+        ================================================= */}
 
-      {/* =================================================
-          HOME
-          Redirect to Login
-      ================================================= */}
+        <Route
+          path="/otp"
+          element={<OtpPassword />}
+        />
 
-      <Route
-        path="/"
-        element={
-          <Navigate
-            to="/login"
-            replace
-          />
-        }
-      />
+        {/* =================================================
+            RESET PASSWORD
+        ================================================= */}
 
-      {/* =================================================
-          ADMIN DASHBOARD
-      ================================================= */}
+        <Route
+          path="/reset-password"
+          element={<Restetpassword />}
+        />
 
-      <Route
-        path="/admin/dashboard"
-        element={<AdminDashboard />}
-      />
+        {/* =================================================
+            HOME
+            Redirect to Login
+        ================================================= */}
 
-      {/* =================================================
-          PROVIDER DASHBOARD
-      ================================================= */}
+        <Route
+          path="/"
+          element={
+            <Navigate
+              to="/login"
+              replace
+            />
+          }
+        />
 
-      <Route
-        path="/provider/dashboard"
-        element={
-          <PageWithFooter>
-            <ProviderDashboard />
-          </PageWithFooter>
-        }
-      />
+        {/* =================================================
+            ADMIN DASHBOARD
+        ================================================= */}
 
-      {/* =================================================
-          MY SERVICES
-      ================================================= */}
+        <Route
+          path="/admin/dashboard"
+          element={<AdminDashboard />}
+        />
 
-      <Route
-        path="/provider/services"
-        element={
-          <PageWithFooter>
-            <MyServices />
-          </PageWithFooter>
-        }
-      />
+        {/* =================================================
+            PROVIDER DASHBOARD
+        ================================================= */}
 
-      {/* =================================================
-          ADD SERVICE
-      ================================================= */}
+        <Route
+          path="/provider/dashboard"
+          element={
+            <PageWithFooter>
+              <ProviderDashboard />
+            </PageWithFooter>
+          }
+        />
 
-      <Route
-        path="/provider/services/add"
-        element={
-          <PageWithFooter>
-            <AddServices />
-          </PageWithFooter>
-        }
-      />
+        {/* =================================================
+            MY SERVICES
+        ================================================= */}
 
-      {/* =================================================
-          PROVIDER REQUESTS
-      ================================================= */}
+        <Route
+          path="/provider/services"
+          element={
+            <PageWithFooter>
+              <MyServices />
+            </PageWithFooter>
+          }
+        />
 
-      <Route
-        path="/provider/requests"
-        element={
-          <PageWithFooter>
-            <ProviderRequest />
-          </PageWithFooter>
-        }
-      />
+        {/* =================================================
+            ADD SERVICE
+        ================================================= */}
 
-      {/* =================================================
-          PROVIDER PROFILE
-      ================================================= */}
+        <Route
+          path="/provider/services/add"
+          element={
+            <PageWithFooter>
+              <AddServices />
+            </PageWithFooter>
+          }
+        />
 
-      <Route
-        path="/provider/profile"
-        element={
-          <PageWithFooter>
-            <ProviderProfile />
-          </PageWithFooter>
-        }
-      />
+        {/* =================================================
+            PROVIDER REQUESTS
+        ================================================= */}
 
-      {/* =================================================
-          UNKNOWN URL
-      ================================================= */}
+        <Route
+          path="/provider/requests"
+          element={
+            <PageWithFooter>
+              <ProviderRequest />
+            </PageWithFooter>
+          }
+        />
 
-      <Route
-        path="*"
-        element={
-          <Navigate
-            to="/login"
-            replace
-          />
-        }
-      />
+        {/* =================================================
+            PROVIDER PROFILE
+        ================================================= */}
 
-    </Routes>
+        <Route
+          path="/provider/profile"
+          element={
+            <PageWithFooter>
+              <ProviderProfile />
+            </PageWithFooter>
+          }
+        />
+
+        {/* =================================================
+            UNKNOWN URL
+        ================================================= */}
+
+        <Route
+          path="*"
+          element={
+            <Navigate
+              to="/login"
+              replace
+            />
+          }
+        />
+
+      </Routes>
+    </>
   );
 }
 
