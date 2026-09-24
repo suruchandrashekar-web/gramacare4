@@ -14,26 +14,20 @@ public class CorsConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
 
-        CorsConfiguration configuration =
-                new CorsConfiguration();
+        CorsConfiguration configuration = new CorsConfiguration();
 
-        // =====================================================
-        // ALLOWED FRONTEND ORIGINS
-        // =====================================================
-
+        // Allowed frontend origins
         configuration.setAllowedOrigins(
                 Arrays.asList(
                         "http://localhost:5173",
                         "http://localhost:5174",
                         "http://localhost:5175",
-                        "http://localhost:5176"
+                        "http://localhost:5176",
+                        "https://gramacare4.vercel.app"
                 )
         );
 
-        // =====================================================
-        // ALLOWED HTTP METHODS
-        // =====================================================
-
+        // Allowed HTTP methods
         configuration.setAllowedMethods(
                 Arrays.asList(
                         "GET",
@@ -45,32 +39,20 @@ public class CorsConfig {
                 )
         );
 
-        // =====================================================
-        // ALLOWED HEADERS
-        // =====================================================
-
+        // Allowed headers
         configuration.setAllowedHeaders(
                 Arrays.asList("*")
         );
 
-        // =====================================================
-        // EXPOSE HEADERS
-        // =====================================================
-
+        // Expose headers
         configuration.setExposedHeaders(
                 Arrays.asList("*")
         );
 
-        // =====================================================
-        // CREDENTIALS
-        // =====================================================
-
+        // Allow credentials
         configuration.setAllowCredentials(true);
 
-        // =====================================================
-        // REGISTER CORS
-        // =====================================================
-
+        // Register CORS configuration
         UrlBasedCorsConfigurationSource source =
                 new UrlBasedCorsConfigurationSource();
 
