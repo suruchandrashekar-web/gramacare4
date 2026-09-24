@@ -7,7 +7,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
-const API_BASE_URL = "https://gramacare4.onrender.com";
+const API_BASE_URL = "http://localhost:8082";
 
 const ADMIN_EMAIL = "chandrasekarsuru@gmail.com";
 

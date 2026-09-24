@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import "./AdminDashBoard.css";
 import adminApi from "./AdminApi.js";
 
-const API_BASE_URL = "https://gramacare4.onrender.com";
+const API_BASE_URL = "http://localhost:8082";
 const ADMIN_EMAIL = "chandrasekarsuru@gmail.com";
 
 const REFRESH_MS = 5000;

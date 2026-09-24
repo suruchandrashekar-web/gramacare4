@@ -13,7 +13,8 @@ import "./AddServices.css";
 // =========================================================
 // API BASE URL
 // =========================================================
-const API_BASE_URL = "https://gramacare4.onrender.com";
+
+const API_BASE_URL = "http://localhost:8082";
 
 // =========================================================
 // COMPONENT
